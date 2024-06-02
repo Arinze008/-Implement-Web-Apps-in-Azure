@@ -1,13 +1,6 @@
 # -Implement-Web-Apps-in-Azure
  Implement Web Apps in Azure Cloud 
----
-lab:
-    module: 'Administer PaaS Compute Options'
----
-
-# Lab 09a - Implement Web Apps
-
-
+--
 ## Lab introduction
 
 In this lab, you learn about Azure web apps. You learn to configure a web app to display a Hello World application in an external GitHub repository. You learn to create a staging slot and swap with the production slot. You also learn about autoscaling to accommodate demand changes.
@@ -130,11 +123,16 @@ In this task, you will configure Web App deployment settings. Deployment setting
 
 1. Select **Save**.
 
+<img width="810" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/f88e229a-abff-4108-8ed9-458000516716">
+
+
 1. From the staging slot, select **Overview**.
 
 1. Select the **Default domain** link, and open the URL in a new tab. 
 
 1. Verify that the staging slot displays **Hello World**.
+
+<img width="621" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/b3acc0b8-c356-4437-bf51-8d86b7089367">
 
 >**Note:** The deployment may take a minute. Be sure to **Refresh** the application page.
 
@@ -148,10 +146,15 @@ In this task, you will swap the staging slot with the production slot. Swapping 
 
 <img width="773" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/e7a0a3b0-7bee-4f97-a6c4-f0af62bb4cf3">
 
+<img width="917" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/9a60f59e-db9b-4906-989f-2b480b8c5765">
+
 
 1. On the **Overview** blade of the Web App select the **Default domain** link to display the website home page.
 
 1. Verify the production web page displays the **Hello World!** page.
+
+<img width="780" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/32859944-d3d5-48c3-ab51-dc68ea13b2d8">
+
 
     >**Note:** Copy the Default domain **URL** you will need it for load testing in the next task. 
 
@@ -161,34 +164,46 @@ In this task, you will configure autoscaling of Azure Web App. Autoscaling enabl
 
 1. In the **Settings** section, select **Scale out (App Service plan)**.
 
+<img width="713" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/018935bf-a862-4eb7-b376-dbcaef680c21">
+
+
     >**Note:** Ensure you are working on the production slot not the staging slot.  
 
 1. From the **Scaling** section, select **Automatic**. Notice the **Rules Based** option. Rules based scaling can be configured for different app metrics. 
 
 1. In the **Maximum burst** field, select **2**.
 
-    ![Screenshot of the autoscale page.](../media/az104-lab09a-autoscale.png)
+<img width="797" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/4d6faf13-ef29-4de3-9951-77567cfe4652">
+
 
 1. Select **Save**.
 
 1. Select **Diagnose and solve problems** (left pane).
 
 1. In the **Load Test your App** box, select **Create Load Test**.
+<img width="832" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/9de659da-cf32-4f6c-901f-98d599089a7a">
 
     + Select **+ Create** and give your load test a **name**.  The name must be unique.
     + Select **Review + create** and then **Create**.
+<img width="642" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/0155603e-0a5a-48f7-bbdc-dd645378f337">
 
 1. Wait for the load test to create, and then select **Go to resource**.
 
 1. From the **Overview** | **Add HTTP requests**, select **Create**.
 
+<img width="892" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/0f66f0eb-0ad8-467d-9c56-e5d751ed071c">
+
+
 1. For the **Test URL**, paste in your **Default domain** URL. Ensure this is properly formatted and begins with **https://**.
 
 1. Select **Review + create** and **Create**.
+<img width="601" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/02c2b383-cc38-42e5-b292-d46dad0aec33">
 
     >**Note:** It may take a couple of minutes to create the test. 
 
 1. Review the test results including **Virtual users**, **Response time**, and **Requests/sec**.
+<img width="872" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/53135957-25f4-4401-9ff1-f7bb96b90ec8">
+<img width="614" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/2b115489-0b59-4671-8425-ec11c219890d">
 
 1. Select **Stop** to complete the test run.
 
@@ -204,12 +219,7 @@ If you are working with **your own subscription** take a minute to delete the la
 Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
 
 + Summarize the steps to create and configure an Azure web app.
-+ What are ways I can scale an Azure Web App?
-
-## Learn more with self-paced training
-
-+ [Stage a web app deployment for testing and rollback by using App Service deployment slots](https://learn.microsoft.com/training/modules/stage-deploy-app-service-deployment-slots/). Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
-+ [Scale an App Service web app to efficiently meet demand with App Service scale up and scale out](https://learn.microsoft.com/training/modules/app-service-scale-up-scale-out/). Respond to periods of increased activity by incrementally increasing the resources available and then, to reduce costs, decreasing these resources when activity drops.
++ What are ways I can scale an Azure Web App?.
 
 ## Key takeaways
 
