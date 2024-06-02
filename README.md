@@ -214,6 +214,7 @@ If you are working with **your own subscription** take a minute to delete the la
 + In the Azure portal, select the resource group, select **Delete the resource group**, **Enter resource group name**, and then click **Delete**.
 + Using Azure PowerShell, `Remove-AzResourceGroup -Name resourceGroupName`.
 + Using the CLI, `az group delete --name resourceGroupName`.
+<img width="704" alt="image" src="https://github.com/Arinze008/-Implement-Web-Apps-in-Azure/assets/139396868/29b6619f-a351-44ca-a8cc-9e9b45c87ccc">
 
 ## Extend your learning with Copilot
 Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
